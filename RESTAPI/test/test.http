@@ -1,0 +1,233 @@
+POST http://localhost:3000/users/signup
+Content-Type: application/json
+
+{
+    "fullname":{"first": "dgar", "last": "hauhan"},
+    "email": "ktmvthebi@miu.edu",
+    "password": "123456"
+ }
+
+# {
+#     "fullname":{"first": "Genet", "last": "Khasay"},
+#     "email": "skhasay@miu.edu",
+#     "password": "112233"
+# }
+
+###
+POST http://localhost:3000/users/signin
+Content-Type: application/json
+
+{
+    "email": "ktmvthebi@miu.edu",
+    "password": "123456"
+}
+
+# {
+#    "email": "skhasay@miu.edu",
+#     "password": "112233"
+   
+# }
+
+###
+@USER_ID = 65f8c00a35b1c66648a1ec0d
+@USER_ID_1 =65f8c05535b1c66648a1ec11
+@FILENAME= images/guest.jpeg
+@FILE_FORM_NAME=myfile
+@FILE_MIME_TYPE=image/jpeg
+@JWT = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjVmODg3NTAyM2QxMzNlMzc0YzFjMWE5IiwiZW1haWwiOiJzY2hhdWhhbkBtaXUuZWR1IiwiZnVsbG5hbWUiOnsiZmlyc3QiOiJTYWdhciIsImxhc3QiOiJDaGF1aGFuIn0sInByb2ZpbGVfcGljdHVyZV9wYXRoIjoiaW1hZ2VzL2d1ZXN0LnBuZyIsImlhdCI6MTcxMDc4NjQxNH0.mAQBEbBdgY8g51TSjmhghVvuGbIZJa7SdjZC-Amu2iM
+@JWT_1 = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjVmODg3NjIyM2QxMzNlMzc0YzFjMWFjIiwiZW1haWwiOiJza2hhc2F5QG1pdS5lZHUiLCJmdWxsbmFtZSI6eyJmaXJzdCI6IkdlbmV0IiwibGFzdCI6IktoYXNheSJ9LCJwcm9maWxlX3BpY3R1cmVfcGF0aCI6InVwbG9hZHMvZjE0YjQyZGFhYzBjZmY0OTc4YTQwZTY4ODMwYmNhMWEiLCJpYXQiOjE3MTA4MDc5NjF9.aCpJccgQDvAXj4KFUhrKnMEzdnBxBboageNxJ2GOyY4
+@COURSE_ID = 65f887b923d133e374c1c1bb
+@COURSE_ID_1 = 65f887c723d133e374c1c1c3
+@LECTURE_ID = 65f88aae14b9c2bdb7bd7937
+@LECTURE_ID_1 =65f84d2e184c9eb2a420836c
+
+### 
+POST http://localhost:3000/users/{{USER_ID}}/picture
+Authorization: Bearer {{JWT}}
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="{{FILE_FORM_NAME}}"; filename="{{FILENAME}}"
+Content-Type: {{FILE_MIME_TYPE}}
+
+< ./{{FILENAME}}
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
+
+###
+POST http://localhost:3000/users/{{USER_ID_1}}/picture
+Authorization: Bearer {{JWT_1}}
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="{{FILE_FORM_NAME}}"; filename="{{FILENAME}}"
+Content-Type: {{FILE_MIME_TYPE}}
+
+< ./{{FILENAME}}
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
+
+###
+DELETE http://localhost:3000/users/{{USER_ID}}/picture
+Authorization: Bearer {{JWT}}
+
+###
+DELETE http://localhost:3000/users/{{USER_ID_1}}/picture
+Authorization: Bearer {{JWT_1}}
+### 
+PATCH http://localhost:3000/users/{{USER_ID}}?active=false
+Authorization: Bearer {{JWT}}
+
+###
+PATCH http://localhost:3000/users/{{USER_ID_1}}?active=false
+Authorization: Bearer {{JWT_1}}
+
+###
+POST http://localhost:3000/courses
+Authorization: Bearer {{JWT}}
+Content-Type: application/json
+
+{
+    "title": "SD540",
+    "description": "Server Side Programming"
+}
+
+# {
+#     "title": "SD500",
+#     "description": "OOP"
+# }
+
+###
+POST http://localhost:3000/courses
+Authorization: Bearer {{JWT_1}}
+Content-Type: application/json
+
+# {
+#     "title": "SD350",
+#     "description": "Problem Solving"
+# }
+
+{
+    "title": "SD430",
+    "description": "Web Application"
+}
+
+###
+GET http://localhost:3000/courses?action=all&page=2
+Authorization: Bearer {{JWT}}
+
+###
+GET http://localhost:3000/courses?action=all&page=1
+Authorization: Bearer {{JWT_1}}
+
+###
+GET http://localhost:3000/courses?action=own&page=1
+Authorization: Bearer {{JWT}}
+
+###
+GET http://localhost:3000/courses?action=own&page=1
+Authorization: Bearer {{JWT_1}}
+
+###
+GET http://localhost:3000/courses/{{COURSE_ID}}
+Authorization: Bearer {{JWT}}
+
+###
+GET http://localhost:3000/courses/{{COURSE_ID_1}}
+Authorization: Bearer {{JWT_1}}
+
+###
+DELETE http://localhost:3000/courses/{{COURSE_ID}}
+Authorization: Bearer {{JWT}}
+
+###
+DELETE http://localhost:3000/courses/{{COURSE_ID_1}}
+Authorization: Bearer {{JWT_1}}
+
+###
+PUT http://localhost:3000/courses/{{COURSE_ID}}
+Authorization: Bearer {{JWT}}
+Content-Type: application/json
+
+{
+    "title": "SD530",
+    "description": "React"
+}
+
+###
+PUT http://localhost:3000/courses/{{COURSE_ID_1}}
+Authorization: Bearer {{JWT_1}}
+Content-Type: application/json
+
+{
+    "title": "SD415",
+    "description": "Typescript"
+}
+
+###
+POST http://localhost:3000/courses/{{COURSE_ID}}/lectures
+Authorization: Bearer {{JWT}}
+Content-Type: application/json
+
+# {
+#     "title": "Node JS" ,
+#     "description": "Node Environment and its dependencies",
+#     "url": "http://nodejs.org"
+# }
+
+{
+    "title": "AWS" ,
+    "description": "Amazon Web Services",
+    "url": "http://aws.com"
+}
+
+###
+POST http://localhost:3000/courses/{{COURSE_ID_1}}/lectures
+Authorization: Bearer {{JWT_1}}
+Content-Type: application/json
+
+# {
+#     "title": "Angular JS" ,
+#     "description": "Angular Frameworks",
+#     "url": "http://angular.org"
+# }
+
+
+{
+    "title": "MERN Stack" ,
+    "description": "Full Stack course",
+    "url": "http://softwaredeveloper.com"
+}
+
+
+
+###
+GET http://localhost:3000/courses/{{COURSE_ID}}/lectures
+Authorization: Bearer {{JWT}}
+
+###
+GET http://localhost:3000/courses/{{COURSE_ID_1}}/lectures
+Authorization: Bearer {{JWT_1}}
+
+###
+PUT http://localhost:3000/courses/{{COURSE_ID}}/lectures/{{LECTURE_ID}}
+Authorization: Bearer {{JWT}}
+Content-Type: application/json
+
+{
+    "title": "REST API" ,
+    "description": "Creating rest API",
+    "url": "http://rest.api"
+}
+
+###
+PUT http://localhost:3000/courses/{{COURSE_ID_1}}/lectures/{{LECTURE_ID_1}}
+Authorization: Bearer {{JWT_1}}
+Content-Type: application/json
+
+{
+    "title": "CSS" ,
+    "description": "Cascading Style Sheet",
+    "url": "http://css.com"
+}
+###
+DELETE http://localhost:3000/courses/{{COURSE_ID}}/lectures/{{LECTURE_ID}}
+Authorization: Bearer {{JWT}}

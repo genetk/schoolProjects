@@ -1,0 +1,329 @@
+{
+  "books": [
+    {
+      "id": "B001",
+      "title": "React2",
+      "genre": "Prog123",
+      "category": "Programm",
+      "authorIDs": [
+        "A002"
+      ],
+      "publisherId": "P001"
+    },
+    {
+      "id": "B002",
+      "title": "The Art of Programming",
+      "genre": "Technology",
+      "category": "Programming",
+      "authorIDs": [
+        "A003"
+      ],
+      "publisherId": "P002"
+    },
+    {
+      "id": "Boo5",
+      "title": "Ea",
+      "genre": "Language",
+      "category": "Prog",
+      "authorIDs": [
+        "A004"
+      ],
+      "publisherId": ""
+    },
+    {
+      "id": "B001",
+      "title": "React",
+      "genre": "Prog",
+      "category": "Programm",
+      "authorIDs": [
+        "A002"
+      ],
+      "publisherId": "P001"
+    },
+    {
+      "id": "4",
+      "title": "Jav",
+      "genre": "Test",
+      "category": "Cdd",
+      "authorIDs": [
+        "A001"
+      ],
+      "publisherId": "P001"
+    },
+    {
+      "id": "B16",
+      "title": "C++",
+      "genre": "PROG",
+      "category": "Test",
+      "authorIDs": [
+        "A001"
+      ],
+      "publisherId": "P001"
+    },
+    {
+      "id": "3445",
+      "title": "Trgtrf",
+      "genre": "Ergr",
+      "category": "Reg",
+      "authorIDs": [
+        "A002"
+      ],
+      "publisherId": "P002"
+    },
+    {
+      "id": "3453",
+      "title": "Ferfer",
+      "genre": "43r",
+      "category": "Fgrw",
+      "authorIDs": [
+        "A001"
+      ],
+      "publisherId": "P001"
+    },
+    {
+      "id": "Er43f",
+      "title": "Efewfg",
+      "genre": "Rgrwe",
+      "category": "Wegerw",
+      "authorIDs": [
+        "A001"
+      ],
+      "publisherId": "P001"
+    },
+    {
+      "id": "345",
+      "title": "Didgfd",
+      "genre": "Fgjkvd",
+      "category": "Efgjkrjf",
+      "authorIDs": [
+        "A001"
+      ],
+      "publisherId": "P001"
+    },
+    {
+      "id": "43534",
+      "title": "Rtrgt",
+      "genre": "Trhtrgrf",
+      "category": "Regtr",
+      "authorIDs": [
+        "A001"
+      ],
+      "publisherId": "P001"
+    },
+    {
+      "id": "Cdd1",
+      "title": "Bambrush",
+      "genre": "Fara",
+      "category": "Agame",
+      "authorIDs": [
+        "A001"
+      ],
+      "publisherId": "P002"
+    },
+    {
+      "id": "Cdd16",
+      "title": "Bam",
+      "genre": "Fara",
+      "category": "Agame",
+      "authorIDs": [
+        "A002"
+      ],
+      "publisherId": "P001"
+    }
+  ],
+  "authors": [
+    {
+      "id": "A001",
+      "name": "John Do3",
+      "phone": "123-456-7233",
+      "email": "john.doe@example.com"
+    },
+    {
+      "id": "A002",
+      "name": "Jane Smith",
+      "phone": "234-567-8901",
+      "email": "jane.smith@example.com"
+    },
+    {
+      "id": "A003",
+      "name": "Emily Johnson",
+      "phone": "345-678-9012",
+      "email": "emily.johnson@example.com"
+    },
+    {
+      "id": "A004",
+      "name": "Geni k",
+      "phone": "83834444",
+      "email": "Geni@miu.edu"
+    },
+    {
+      "id": "A005",
+      "name": "Hebi",
+      "phone": "576879",
+      "email": "F@miu.edu"
+    },
+    {
+      "id": "88",
+      "name": "Geni",
+      "phone": "432",
+      "email": "2453@miu.edu"
+    }
+  ],
+  "publishers": [
+    {
+      "id": "P001",
+      "name": "TechBooks Publishing",
+      "phone": "456-789-0123",
+      "email": "contact@techbookspub.com",
+      "address": "123 Tech St, Silicon Valley, CA"
+    },
+    {
+      "id": "P002",
+      "name": "CodeWorld Publishers",
+      "phone": "567-890-1234",
+      "email": "info@codeworldpub.com",
+      "address": "234 Code Ave, Programmer City, TX"
+    }
+  ],
+  "catalogs": [
+    {
+      "id": "C001",
+      "bookId": "B001",
+      "numberOfCopies": 10,
+      "availableCopies": 7
+    },
+    {
+      "id": "C002",
+      "bookId": "B002",
+      "numberOfCopies": 5,
+      "availableCopies": 5
+    },
+    {
+      "id": "",
+      "bookId": "",
+      "availableCopies": null,
+      "numberOfCopies": null
+    },
+    {
+      "id": "",
+      "bookId": "",
+      "availableCopies": null,
+      "numberOfCopies": null
+    },
+    {
+      "id": "",
+      "bookId": "",
+      "availableCopies": null,
+      "numberOfCopies": null
+    },
+    {
+      "id": "",
+      "bookId": "",
+      "availableCopies": null,
+      "numberOfCopies": null
+    },
+    {
+      "id": "",
+      "bookId": "",
+      "availableCopies": null,
+      "numberOfCopies": null
+    },
+    {
+      "id": "",
+      "bookId": "",
+      "availableCopies": null,
+      "numberOfCopies": null
+    },
+    {
+      "id": "",
+      "availableCopies": null,
+      "numberOfCopies": null
+    },
+    {
+      "id": "",
+      "bookId": "Wedwe",
+      "availableCopies": null,
+      "numberOfCopies": null
+    },
+    {
+      "id": "",
+      "bookId": "Wedwe",
+      "availableCopies": null,
+      "numberOfCopies": null
+    },
+    {
+      "id": "",
+      "bookId": "",
+      "availableCopies": null,
+      "numberOfCopies": null
+    },
+    {
+      "id": "",
+      "bookId": "1232",
+      "availableCopies": 43532,
+      "numberOfCopies": 43543
+    },
+    {
+      "id": "",
+      "bookId": "Cdd1",
+      "availableCopies": null,
+      "numberOfCopies": null
+    },
+    {
+      "id": "",
+      "bookId": "Cdd16",
+      "availableCopies": 12,
+      "numberOfCopies": 12
+    }
+  ],
+  "members": [
+    {
+      "id": "M001",
+      "residentID": "S1001",
+      "firstname": "Alice",
+      "lastname": "Green",
+      "address": "789 Library Ln, Education Town, MA",
+      "phone": "678-901-2345",
+      "email": "alice.green@example.com"
+    },
+    {
+      "id": "M002",
+      "residentID": "S2001",
+      "firstname": "Geni",
+      "lastname": "Alem",
+      "address": "1000 4th street",
+      "phone": "8765678766",
+      "email": "Genik@miu.edu"
+    },
+    {
+      "id": "M004",
+      "residentID": "S2002",
+      "firstname": "Selu",
+      "lastname": "Alem",
+      "address": "1000 4th street",
+      "phone": "8765678766",
+      "email": "Seluk@miu.edu"
+    }
+  ],
+  "transactions": [
+    {
+      "id": "T001",
+      "bookId": "B001",
+      "memberId": "M001",
+      "borrowedDate": "2024-05-01",
+      "returnedDate": "2024-05-15"
+    }
+  ],
+  "users": [
+    {
+      "id": "U001",
+      "name": "Peter",
+      "email": "peter@miu.edu"
+    },
+    {
+      "id": "U002",
+      "name": "geni",
+      "email": "geni@miu.edu"
+    }
+  ]
+}
