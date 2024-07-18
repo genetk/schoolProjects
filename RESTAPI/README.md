@@ -1,6 +1,6 @@
-### SD540 Final Project: REST API for an educational platform
+ REST API for an educational platform
 
-The project repository should be "Accepted/Forked" by team leaders only. One team member (team leader) will add their team members as "collaborators" so they could collaborate and push their daily progress.
+
 
 Create an Express application with the following specifications:
 
