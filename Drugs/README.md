@@ -1,4 +1,4 @@
-Final-Project
+
 
 ## Medication Reviews/Side-Effects application:
 The application helps users to review and report medications side effects.
